@@ -1,0 +1,165 @@
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px #F28C28 solid;
+    margin-bottom: 2em;
+    height: 5em;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3em;
+    color: black;
+}
+
+.header-bars {
+    margin-right: 5em;
+    width: 5em;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-menu-container {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .5rem);
+    background-color: white;
+    padding: .5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
+}
+
+.dropdown-item:hover {
+    background-color: rgb(242, 242, 242);
+    cursor: pointer;
+}
+
+.find-home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#find-search-bar {
+    width: 60%;
+    border: 1px #ccc solid;
+    border-radius: 10em;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.store-links-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(242, 242, 242);
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 3em;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px #fff solid;
+    background-color: #fff;
+    border-radius: 1em;
+    min-height: 10em;
+    width: 15em;
+    margin: .5em;
+}
+
+.link-container:hover {
+    border: .5px black solid;
+}
+
+.store-link-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+.store-link-img {
+    height: 100%;
+    max-height: 15em;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.store-link-text {
+    font-size: .75em;
+    margin-left: .5em;
+    color: black;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.create-store-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: '5em';
+}
+
+.create-store-input {
+    width: 50%;
+    margin-bottom: 1em;
+    font-size: 1em;
+    padding: 1em;
+    border: 1px #ccc solid;
+    border-radius: 10em;
+}
+
+.display-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display-item-subcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-self: space-around;
+    width: 100%;
+}
+
+.display-item-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5em;
+}
+
+.display-item-image-container {
+    height: 30em;
+    width: 30em;
+}
+
+.my-stores-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-stores-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
