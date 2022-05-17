@@ -2,9 +2,8 @@ import multer from 'multer';
 import { GridFsStorage } from 'multer-gridfs-storage';
 import mongoose from 'mongoose';
 import path from 'path';
-import envVars from '../config/envVars.js';
 
-const MONGO_URI = envVars.MONGO_URI;
+const MONGO_URI = process.env.MONGO_URI;
 
 const conn = mongoose.createConnection(MONGO_URI);
 
