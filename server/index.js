@@ -1,12 +1,14 @@
 import express from "express";
-import envVars from './config/envVars.js';
+import dotenv from "dotenv";
 import cors from 'cors';
 import mongoose from "mongoose";
 import store from './routes/storeRoutes.js';
 
+dotenv.config({ path: "./config/config.env" });
+
 const app = express();
 
-const PORT = envVars.PORT;
+const PORT = process.env.PORT;
 
 app.use(express.json());
 
@@ -14,7 +16,7 @@ app.use(cors({
     origin: "*"
 }));
 
-mongoose.connect(envVars.MONGO_URI);
+mongoose.connect(process.env.MONGO_URI);
 
 app.use("/store", store); 
 
