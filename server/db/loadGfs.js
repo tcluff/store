@@ -2,6 +2,11 @@ import multer from 'multer';
 import { GridFsStorage } from 'multer-gridfs-storage';
 import mongoose from 'mongoose';
 import path from 'path';
+import dotenv from 'dotenv';
+
+const __dirname = path.resolve(path.dirname(''));
+
+dotenv.config({ path: path.resolve(__dirname, "./config/config.env") });
 
 const MONGO_URI = process.env.MONGO_URI;
 
