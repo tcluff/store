@@ -3,8 +3,11 @@ import dotenv from "dotenv";
 import cors from 'cors';
 import mongoose from "mongoose";
 import store from './routes/storeRoutes.js';
+import path from "path";
 
-dotenv.config({ path: "./config/config.env" });
+const __dirname = path.resolve(path.dirname(''));
+
+dotenv.config({ path: path.resolve(__dirname, "./config/config.env") });
 
 const app = express();
 
